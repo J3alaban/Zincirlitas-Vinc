@@ -3,7 +3,7 @@ version: "3.8"
 services:
   abdullahozmenvinc-frontend:
     build: .
-    container_name: abdullahozmenvinc-frontend
+    container_name: mahir-hafriyat
     ports:
-      - "3004:80"
+      - "3011:80"
     restart: unless-stopped
