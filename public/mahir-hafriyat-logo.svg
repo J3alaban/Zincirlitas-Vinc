@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 150" width="100%" height="100%">
+  <!-- Arka Plan Toprak/Dağ Kütlesi -->
+  <polygon points="30,110 70,60 120,90 160,50 200,110" fill="#1F293733" />
+  <polygon points="50,110 100,40 140,75 180,110" fill="#1F2937" opacity="0.15" />
+  
+  <!-- Zemin Çizgisi -->
+  <line x1="20" y1="110" x2="210" y2="110" stroke="#1F2937" stroke-width="6" stroke-linecap="round" />
+  <line x1="40" y1="118" x2="190" y2="118" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Ekskavatör / Kepçe Gövde & Palet -->
+  <rect x="80" y="90" width="50" height="15" rx="7" fill="#1F2937" />
+  <circle cx="92" y="97.5" r="4" fill="#FFF" />
+  <circle cx="105" y="97.5" r="4" fill="#FFF" />
+  <circle cx="118" y="97.5" r="4" fill="#FFF" />
+  <rect x="85" y="72" width="35" height="18" rx="3" fill="#F59E0B" />
+  <rect x="90" y="76" width="12" height="10" rx="1" fill="#1F2937" />
+
+  <!-- Kepçe Kolu (Boom & Arm) -->
+  <path d="M 115,76 L 145,50 L 180,65 L 185,80" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Kepçe Ağzı (Bucket) -->
+  <path d="M 185,80 L 175,92 L 163,88 L 168,76 Z" fill="#1F2937" />
+  <!-- Dinamik Hareket Çizgileri -->
+  <path d="M 160,100 Q 170,105 180,98" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+</svg>
