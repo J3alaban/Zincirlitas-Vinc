@@ -1,43 +1,43 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShieldCheck, Snowflake, MapPin, ChevronRight, Star } from 'lucide-react';
+import { ShieldAlert, Zap, Leaf, ChevronRight } from 'lucide-react';
 
 const Features = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     const features = [
         {
-            icon: ShieldCheck,
-            title: "%100 Hijyen ve Güven",
-            desc: "Etlerimiz, İslami usullere uygun olarak, modern tesislerde ve sürekli veteriner kontrolü altında hazırlanır. Sağlığınız bizim için en büyük önceliktir.",
-            image: "/Features1.png",
-            tag: "Gıda Güvenliği"
+            icon: ShieldAlert,
+            title: "Maksimum İş Güvenliği",
+            desc: "Tüm şantiye alanlarında, ISG (İş Sağlığı ve Güvenliği) standartlarına %100 uyum sağlıyoruz. Operasyonlarımız profesyonel mühendislik denetimleri altında, sertifikalı uzman ekiplerimiz tarafından yürütülür.",
+            image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop", // Baretli çalışan / Şantiye
+            tag: "ISG Standartları"
         },
         {
-            icon: Star,
-            title: "Yerli Besi & Doğallık",
-            desc: "Fabrika yemi yerine doğal meralarda beslenen hayvanları tercih ediyoruz. Etin renginden dokusuna kadar her detayda doğallığı hissedeceksiniz.",
-            image: "https://images.unsplash.com/photo-1551028150-64b9f398f678?q=80&w=2070&auto=format&fit=crop",
-            tag: "Ustalık Seçimi"
+            icon: Zap,
+            title: "Yüksek Tonaj & Güçlü Filo",
+            desc: "En sert zeminlerde ve en derin temel kazılarında bile performanstan ödün vermeyen, bakımları düzenli yapılan modern iş makinesi parkurumuzla projelerinize hız ve kesintisiz güç katıyoruz.",
+            image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop", // Ekskavatör / Ağır Makine
+            tag: "Operasyon Gücü"
         },
         {
-            icon: Snowflake,
-            title: "Tazelik ve Soğuk Zincir",
-            desc: "Ürünlerimizi parçaladığımız andan size ulaştırdığımız ana kadar ısı kontrolünü elden bırakmıyoruz. Asla dondurulmuş ürün satmıyoruz.",
-            image: "https://images.unsplash.com/photo-1602491673980-73aa38de027a?q=80&w=2070&auto=format&fit=crop",
-            tag: "Tazelik Garantisi"
+            icon: Leaf,
+            title: "Çevreye Hassas Yıkım",
+            desc: "Bina yıkımı ve moloz bertaraf işlemlerinde çevre mevzuatlarına tam uyum sağlıyoruz. Çevre kirliliğini ve gürültüyü en aza indirmek için sulama sistemleri ve modern kırım teknikleri kullanıyoruz.",
+            image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=2070&auto=format&fit=crop", // Şantiye Sahası
+            tag: "Çevre Mevzuatı"
         }
     ];
 
     return (
         <section className="py-32 bg-[#050505] relative overflow-hidden">
-            {/* Arka Plan Süslemesi (Sarı yerine Kırmızı) */}
-            <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-red-600/5 blur-[120px] rounded-full" />
+            {/* Arka Plan Süslemesi (Endüstriyel Amber/Turuncu Dokunuş) */}
+            <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-amber-600/5 blur-[120px] rounded-full" />
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-6xl font-black text-white uppercase italic">
-                        Lezzet <span className="text-red-600">Sırrımız</span>
+                    <h2 className="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">
+                        Hizmet <span className="text-amber-500">Standartlarımız</span>
                     </h2>
                 </div>
 
@@ -50,12 +50,12 @@ const Features = () => {
                                 onClick={() => setActiveTab(index)}
                                 className={`w-full flex items-center justify-between p-6 rounded-2xl transition-all duration-500 text-left border ${
                                     activeTab === index
-                                        ? "bg-red-600 border-red-600 shadow-[0_0_30px_rgba(220,38,38,0.2)]"
+                                        ? "bg-amber-500 border-amber-500 shadow-[0_0_30px_rgba(245,158,11,0.2)]"
                                         : "bg-zinc-900/50 border-zinc-800 hover:border-zinc-700"
                                 }`}
                             >
                                 <div className="flex items-center gap-4">
-                                    <div className={`p-3 rounded-xl ${activeTab === index ? "bg-black text-red-600" : "bg-zinc-800 text-red-600"}`}>
+                                    <div className={`p-3 rounded-xl ${activeTab === index ? "bg-black text-amber-500" : "bg-zinc-800 text-amber-500"}`}>
                                         <feature.icon className="w-6 h-6" />
                                     </div>
                                     <span className={`font-bold uppercase tracking-wider ${activeTab === index ? "text-white" : "text-gray-400"}`}>
@@ -79,17 +79,17 @@ const Features = () => {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-zinc-900/30 p-8 rounded-[32px] border border-zinc-800/50 backdrop-blur-sm"
                             >
                                 <div className="space-y-6 flex flex-col justify-center">
-                                    <span className="text-red-600 font-black text-xs uppercase tracking-[0.3em]">
+                                    <span className="text-amber-500 font-black text-xs uppercase tracking-[0.3em]">
                                         {features[activeTab].tag}
                                     </span>
-                                    <h3 className="text-3xl font-black text-white uppercase leading-tight">
+                                    <h3 className="text-3xl font-black text-white uppercase leading-tight tracking-tight">
                                         {features[activeTab].title}
                                     </h3>
                                     <p className="text-gray-400 leading-relaxed text-lg">
                                         {features[activeTab].desc}
                                     </p>
                                     <div className="pt-4">
-                                        <div className="h-1 w-24 bg-red-600" />
+                                        <div className="h-1 w-24 bg-amber-500" />
                                     </div>
                                 </div>
 

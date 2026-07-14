@@ -6,8 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Navigation from '@/components/Navigation';
 import HomePage from '@/pages/HomePage';
 import AboutContact from '@/pages/AboutContact';
-import ProductDetail from '@/pages/ProductDetail';
-import Cart from '@/pages/Cart';
+
 import Contact from '@/pages/Contact';
 
 function App() {
@@ -30,8 +29,7 @@ function App() {
                         <Route path="/about-contact" element={<AboutContact />} />
 
                         {/* Legacy Routes */}
-                        <Route path="/urun/:id" element={<ProductDetail />} />
-                        <Route path="/sepet" element={<Cart />} />
+
                         <Route path="/iletisim" element={<Contact />} />
                     </Routes>
                     <Toaster />

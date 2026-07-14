@@ -55,8 +55,8 @@ const Contact = () => {
 
         if (validateForm()) {
             toast({
-                title: "Mesajınız Gönderildi! 📧",
-                description: "En kısa sürede sizinle iletişime geçeceğiz.",
+                title: "Talebiniz Alındı! 🏗️",
+                description: "Proje ekibimiz en kısa sürede sizinle iletişime geçecektir.",
             });
             setFormData({ name: '', email: '', subject: '', message: '' });
         } else {
@@ -71,25 +71,25 @@ const Contact = () => {
     return (
         <>
             <Helmet>
-                <title>{"İletişim - KalemKraft"}</title>
-                <meta name="description" content="KalemKraft ile iletişime geçin. Sorularınız ve önerileriniz için bizimle iletişime geçebilirsiniz." />
+                <title>İletişim & Teklif Talebi - Hafriyat Hizmetleri</title>
+                <meta name="description" content="Hafriyat, kazı, bina yıkımı ve şantiye çözümleriniz için profesyonel ekibimizden hemen teklif alın." />
             </Helmet>
 
-            <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4">
+            <div className="min-h-screen bg-gradient-to-br from-zinc-50 to-zinc-100 py-12 px-4">
                 <div className="max-w-6xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         className="text-center mb-12"
                     >
-                        <h1 className="text-5xl font-bold text-gray-800 mb-4">İletişime Geçin</h1>
-                        <p className="text-gray-600 text-lg">
-                            Sorularınız mı var? Size yardımcı olmaktan mutluluk duyarız!
+                        <h1 className="text-5xl font-black text-zinc-900 mb-4 uppercase tracking-tighter">Proje & İletişim</h1>
+                        <p className="text-zinc-600 text-lg max-w-2xl mx-auto">
+                            Şantiye, kazı ve yıkım projeleriniz için profesyonel destek ve fiyat teklifi almak adına bizimle iletişime geçin.
                         </p>
                     </motion.div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        {/* Contact Info */}
+                        {/* İletişim Bilgileri */}
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             animate={{ opacity: 1, x: 0 }}
@@ -97,55 +97,55 @@ const Contact = () => {
                             className="space-y-6"
                         >
                             <motion.div
-                                whileHover={{ scale: 1.05, y: -5 }}
-                                className="bg-white rounded-2xl shadow-lg p-6"
+                                whileHover={{ scale: 1.02, y: -2 }}
+                                className="bg-white rounded-2xl shadow-md border border-zinc-200/60 p-6"
                             >
-                                <div className="bg-[#FFDAB9] rounded-full w-14 h-14 flex items-center justify-center mb-4">
-                                    <Phone className="h-7 w-7 text-[#FF7F50]" />
+                                <div className="bg-amber-100 rounded-xl w-14 h-14 flex items-center justify-center mb-4">
+                                    <Phone className="h-7 w-7 text-amber-600" />
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-800 mb-2">Telefon</h3>
-                                <p className="text-gray-600">+90 (212) 555 0123</p>
+                                <h3 className="text-xl font-black text-zinc-900 uppercase tracking-tight mb-2">Şantiye Destek Hattı</h3>
+                                <p className="text-zinc-600 font-medium">+90 (212) 555 0123</p>
                             </motion.div>
 
                             <motion.div
-                                whileHover={{ scale: 1.05, y: -5 }}
-                                className="bg-white rounded-2xl shadow-lg p-6"
+                                whileHover={{ scale: 1.02, y: -2 }}
+                                className="bg-white rounded-2xl shadow-md border border-zinc-200/60 p-6"
                             >
-                                <div className="bg-[#FFDAB9] rounded-full w-14 h-14 flex items-center justify-center mb-4">
-                                    <Mail className="h-7 w-7 text-[#FF7F50]" />
+                                <div className="bg-amber-100 rounded-xl w-14 h-14 flex items-center justify-center mb-4">
+                                    <Mail className="h-7 w-7 text-amber-600" />
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-800 mb-2">E-posta</h3>
-                                <p className="text-gray-600">info@kalemkraft.com</p>
+                                <h3 className="text-xl font-black text-zinc-900 uppercase tracking-tight mb-2">E-posta Adresi</h3>
+                                <p className="text-zinc-600 font-medium">proje@hafriyathizmetleri.com</p>
                             </motion.div>
 
                             <motion.div
-                                whileHover={{ scale: 1.05, y: -5 }}
-                                className="bg-white rounded-2xl shadow-lg p-6"
+                                whileHover={{ scale: 1.02, y: -2 }}
+                                className="bg-white rounded-2xl shadow-md border border-zinc-200/60 p-6"
                             >
-                                <div className="bg-[#FFDAB9] rounded-full w-14 h-14 flex items-center justify-center mb-4">
-                                    <MapPin className="h-7 w-7 text-[#FF7F50]" />
+                                <div className="bg-amber-100 rounded-xl w-14 h-14 flex items-center justify-center mb-4">
+                                    <MapPin className="h-7 w-7 text-amber-600" />
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-800 mb-2">Adres</h3>
-                                <p className="text-gray-600">
-                                    Atatürk Bulvarı No:123<br />
-                                    Kadıköy, İstanbul, Türkiye
+                                <h3 className="text-xl font-black text-zinc-900 uppercase tracking-tight mb-2">Merkez Ofis</h3>
+                                <p className="text-zinc-600 leading-relaxed">
+                                    Sanayi Mahallesi, Kazı Alanı Sokak No:45<br />
+                                    Pendik, İstanbul, Türkiye
                                 </p>
                             </motion.div>
                         </motion.div>
 
-                        {/* Contact Form */}
+                        {/* İletişim Formu */}
                         <motion.div
                             initial={{ opacity: 0, x: 30 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.3 }}
                             className="lg:col-span-2"
                         >
-                            <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg p-8">
+                            <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-md border border-zinc-200/60 p-8">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                     {/* Name */}
                                     <div>
-                                        <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
-                                            İsim Soyisim *
+                                        <label htmlFor="name" className="block text-zinc-800 font-bold mb-2">
+                                            Adınız Soyadınız / Firma Adı *
                                         </label>
                                         <input
                                             type="text"
@@ -153,10 +153,10 @@ const Contact = () => {
                                             name="name"
                                             value={formData.name}
                                             onChange={handleChange}
-                                            className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-gray-800 focus:outline-none focus:border-[#FF7F50] transition-colors ${
-                                                errors.name ? 'border-red-500' : 'border-gray-300'
+                                            className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-zinc-900 focus:outline-none focus:border-amber-500 transition-colors ${
+                                                errors.name ? 'border-red-500' : 'border-zinc-300'
                                             }`}
-                                            placeholder="Adınız ve soyadınız"
+                                            placeholder="Adınız veya firmanızın unvanı"
                                         />
                                         {errors.name && (
                                             <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -165,8 +165,8 @@ const Contact = () => {
 
                                     {/* Email */}
                                     <div>
-                                        <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">
-                                            E-posta *
+                                        <label htmlFor="email" className="block text-zinc-800 font-bold mb-2">
+                                            E-posta Adresi *
                                         </label>
                                         <input
                                             type="email"
@@ -174,10 +174,10 @@ const Contact = () => {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleChange}
-                                            className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-gray-800 focus:outline-none focus:border-[#FF7F50] transition-colors ${
-                                                errors.email ? 'border-red-500' : 'border-gray-300'
+                                            className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-zinc-900 focus:outline-none focus:border-amber-500 transition-colors ${
+                                                errors.email ? 'border-red-500' : 'border-zinc-300'
                                             }`}
-                                            placeholder="ornek@email.com"
+                                            placeholder="ornek@firma.com"
                                         />
                                         {errors.email && (
                                             <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -187,8 +187,8 @@ const Contact = () => {
 
                                 {/* Subject */}
                                 <div className="mb-6">
-                                    <label htmlFor="subject" className="block text-gray-700 font-semibold mb-2">
-                                        Konu *
+                                    <label htmlFor="subject" className="block text-zinc-800 font-bold mb-2">
+                                        Proje Türü / Konu *
                                     </label>
                                     <input
                                         type="text"
@@ -196,10 +196,10 @@ const Contact = () => {
                                         name="subject"
                                         value={formData.subject}
                                         onChange={handleChange}
-                                        className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-gray-800 focus:outline-none focus:border-[#FF7F50] transition-colors ${
-                                            errors.subject ? 'border-red-500' : 'border-gray-300'
+                                        className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-zinc-900 focus:outline-none focus:border-amber-500 transition-colors ${
+                                            errors.subject ? 'border-red-500' : 'border-zinc-300'
                                         }`}
-                                        placeholder="Mesajınızın konusu"
+                                        placeholder="Örn: Temel Kazısı, Bina Yıkımı, Moloz Atımı"
                                     />
                                     {errors.subject && (
                                         <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
@@ -208,8 +208,8 @@ const Contact = () => {
 
                                 {/* Message */}
                                 <div className="mb-6">
-                                    <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">
-                                        Mesaj *
+                                    <label htmlFor="message" className="block text-zinc-800 font-bold mb-2">
+                                        Proje Detayları ve Mesajınız *
                                     </label>
                                     <textarea
                                         id="message"
@@ -217,10 +217,10 @@ const Contact = () => {
                                         value={formData.message}
                                         onChange={handleChange}
                                         rows="6"
-                                        className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-gray-800 focus:outline-none focus:border-[#FF7F50] transition-colors resize-none ${
-                                            errors.message ? 'border-red-500' : 'border-gray-300'
+                                        className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-zinc-900 focus:outline-none focus:border-amber-500 transition-colors resize-none ${
+                                            errors.message ? 'border-red-500' : 'border-zinc-300'
                                         }`}
-                                        placeholder="Mesajınızı buraya yazın..."
+                                        placeholder="Lütfen işin yapılacağı yer, tahmini metraj veya proje detaylarını belirtin..."
                                     />
                                     {errors.message && (
                                         <p className="text-red-500 text-sm mt-1">{errors.message}</p>
@@ -229,15 +229,15 @@ const Contact = () => {
 
                                 {/* Submit Button */}
                                 <motion.div
-                                    whileHover={{ scale: 1.02 }}
-                                    whileTap={{ scale: 0.98 }}
+                                    whileHover={{ scale: 1.01 }}
+                                    whileTap={{ scale: 0.99 }}
                                 >
                                     <Button
                                         type="submit"
-                                        className="w-full bg-[#FF7F50] hover:bg-[#ff6a3d] text-white py-6 rounded-2xl text-lg font-bold shadow-xl hover:shadow-2xl transition-all"
+                                        className="w-full bg-amber-500 hover:bg-amber-600 text-white py-6 rounded-xl text-lg font-black uppercase tracking-tight shadow-lg transition-all"
                                     >
                                         <Send className="h-5 w-5 mr-2" />
-                                        Mesajı Gönder
+                                        Teklif Talebi Gönder
                                     </Button>
                                 </motion.div>
                             </form>
