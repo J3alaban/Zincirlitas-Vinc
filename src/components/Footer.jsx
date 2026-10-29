@@ -67,7 +67,7 @@ const Footer = () => {
                                 </div>
                                 <div className="text-left">
                                     <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-widest block">Acil Kiralama Hattı</span>
-                                    <span className="text-lg font-black text-white tracking-wider">+90 533 714 72 90</span>
+                                    <span className="text-2xl sm:text-3xl font-black text-white tracking-wider">+90 533 714 72 90</span>
                                 </div>
                             </a>
                         </div>

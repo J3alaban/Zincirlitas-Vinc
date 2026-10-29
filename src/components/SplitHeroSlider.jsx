@@ -11,7 +11,7 @@ const SplitHeroSlider = () => {
             titleHighlight: "Güvenle Yükselin",
             description: "Son teknoloji sepetli vinç filomuz ve ISG sertifikalı uzman operatör kadromuzla zorlu yüksek sahalarda sıfır kaza prensibiyle hizmet veriyoruz.",
             image: "/1.jpeg",
-            stat: "30+ Metre",
+            stat: "27+ Metre",
             statLabel: "Maksimum Erişim"
         },
         {
@@ -33,7 +33,18 @@ const SplitHeroSlider = () => {
             image: "/3.jpeg",
             stat: "%100",
             statLabel: "İş Güvenliği Uyumu"
+        },
+        {
+                id: 4,
+                tag: "Hızlı Kurulum & Pratik Operasyon",
+                titleLine1: "27 metreden 70 metreye kadar sepetli vinç",
+                titleHighlight: "Profesyonel Çözüm",
+                description: "Son teknoloji sepetli vinç filomuz ve ISG sertifikalı uzman operatör kadromuzla zorlu yüksek sahalarda sıfır kaza prensibiyle hizmet veriyoruz.",
+                image: "/9.jpeg",
+                stat: "27+",
+                statLabel: "Yüksek Erişim"
         }
+
     ];
 
     const [currentSlide, setCurrentSlide] = useState(0);
