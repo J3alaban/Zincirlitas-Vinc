@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-  Zincirlitas-Vinc-Frontend:
+  zincirlitas-zinc-zrontend:
     build: .
-    container_name: Zincirlitas-Vinc
+    container_name: zincirlitas-vinc
     ports:
       - "3016:80"
     restart: unless-stopped
