@@ -3,7 +3,7 @@ version: "3.8"
 services:
   abdullahozmenvinc-frontend:
     build: .
-    container_name: mahir-hafriyat
+    container_name: Zincirlitas-Vinc
     ports:
-      - "3011:80"
+      - "3016:80"
     restart: unless-stopped

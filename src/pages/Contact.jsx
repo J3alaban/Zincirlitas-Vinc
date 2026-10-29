@@ -55,8 +55,8 @@ const Contact = () => {
 
         if (validateForm()) {
             toast({
-                title: "Talebiniz Alındı! 🏗️",
-                description: "Proje ekibimiz en kısa sürede sizinle iletişime geçecektir.",
+                title: "Talebiniz Alındı! 🚜",
+                description: "Vinç kiralama ve teknik ekibimiz en kısa sürede sizinle iletişime geçecektir.",
             });
             setFormData({ name: '', email: '', subject: '', message: '' });
         } else {
@@ -71,20 +71,25 @@ const Contact = () => {
     return (
         <>
             <Helmet>
-                <title>İletişim & Teklif Talebi - Hafriyat Hizmetleri</title>
-                <meta name="description" content="Hafriyat, kazı, bina yıkımı ve şantiye çözümleriniz için profesyonel ekibimizden hemen teklif alın." />
+                <title>İletişim & Teklif Talebi - Sepetli Vinç Kiralama</title>
+                <meta name="description" content="Sepetli vinç kiralama, dış cephe montajı ve yüksekte çalışma çözümleriniz için profesyonel ekibimizden hızlıca fiyat teklifi alın." />
             </Helmet>
 
-            <div className="min-h-screen bg-gradient-to-br from-zinc-50 to-zinc-100 py-12 px-4">
+            <div className="min-h-screen bg-zinc-950 text-white py-16 px-4">
                 <div className="max-w-6xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-center mb-12"
+                        className="text-center mb-16"
                     >
-                        <h1 className="text-5xl font-black text-zinc-900 mb-4 uppercase tracking-tighter">Proje & İletişim</h1>
-                        <p className="text-zinc-600 text-lg max-w-2xl mx-auto">
-                            Şantiye, kazı ve yıkım projeleriniz için profesyonel destek ve fiyat teklifi almak adına bizimle iletişime geçin.
+                        <div className="inline-block bg-emerald-500/10 text-emerald-400 px-4 py-2 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-4 border border-emerald-500/20">
+                            7/24 Kesintisiz Hizmet
+                        </div>
+                        <h1 className="text-4xl md:text-6xl font-black text-white mb-4 uppercase tracking-tighter italic">
+                            İletişim & <span className="text-emerald-500">Teklif Alın</span>
+                        </h1>
+                        <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto">
+                            Saatlik, günlük veya projenize özel vinç kiralama talepleriniz ve keşif hizmetlerimiz için bizimle iletişime geçin.
                         </p>
                     </motion.div>
 
@@ -98,36 +103,36 @@ const Contact = () => {
                         >
                             <motion.div
                                 whileHover={{ scale: 1.02, y: -2 }}
-                                className="bg-white rounded-2xl shadow-md border border-zinc-200/60 p-6"
+                                className="bg-zinc-900 rounded-2xl border border-zinc-800 p-6"
                             >
-                                <div className="bg-amber-100 rounded-xl w-14 h-14 flex items-center justify-center mb-4">
-                                    <Phone className="h-7 w-7 text-amber-600" />
+                                <div className="bg-emerald-500/10 rounded-xl w-14 h-14 flex items-center justify-center mb-4 border border-emerald-500/20">
+                                    <Phone className="h-7 w-7 text-emerald-400" />
                                 </div>
-                                <h3 className="text-xl font-black text-zinc-900 uppercase tracking-tight mb-2">Şantiye Destek Hattı</h3>
-                                <p className="text-zinc-600 font-medium">+90 (212) 555 0123</p>
+                                <h3 className="text-xl font-black text-white uppercase tracking-tight mb-2 italic">7/24 Operasyon Hattı</h3>
+                                <p className="text-zinc-400 font-medium">+90 (212) 555 0123</p>
                             </motion.div>
 
                             <motion.div
                                 whileHover={{ scale: 1.02, y: -2 }}
-                                className="bg-white rounded-2xl shadow-md border border-zinc-200/60 p-6"
+                                className="bg-zinc-900 rounded-2xl border border-zinc-800 p-6"
                             >
-                                <div className="bg-amber-100 rounded-xl w-14 h-14 flex items-center justify-center mb-4">
-                                    <Mail className="h-7 w-7 text-amber-600" />
+                                <div className="bg-emerald-500/10 rounded-xl w-14 h-14 flex items-center justify-center mb-4 border border-emerald-500/20">
+                                    <Mail className="h-7 w-7 text-emerald-400" />
                                 </div>
-                                <h3 className="text-xl font-black text-zinc-900 uppercase tracking-tight mb-2">E-posta Adresi</h3>
-                                <p className="text-zinc-600 font-medium">proje@hafriyathizmetleri.com</p>
+                                <h3 className="text-xl font-black text-white uppercase tracking-tight mb-2 italic">E-posta Adresi</h3>
+                                <p className="text-zinc-400 font-medium">info@sepetlivinc.com</p>
                             </motion.div>
 
                             <motion.div
                                 whileHover={{ scale: 1.02, y: -2 }}
-                                className="bg-white rounded-2xl shadow-md border border-zinc-200/60 p-6"
+                                className="bg-zinc-900 rounded-2xl border border-zinc-800 p-6"
                             >
-                                <div className="bg-amber-100 rounded-xl w-14 h-14 flex items-center justify-center mb-4">
-                                    <MapPin className="h-7 w-7 text-amber-600" />
+                                <div className="bg-emerald-500/10 rounded-xl w-14 h-14 flex items-center justify-center mb-4 border border-emerald-500/20">
+                                    <MapPin className="h-7 w-7 text-emerald-400" />
                                 </div>
-                                <h3 className="text-xl font-black text-zinc-900 uppercase tracking-tight mb-2">Merkez Ofis</h3>
-                                <p className="text-zinc-600 leading-relaxed">
-                                    Sanayi Mahallesi, Kazı Alanı Sokak No:45<br />
+                                <h3 className="text-xl font-black text-white uppercase tracking-tight mb-2 italic">Merkez Garaj & Ofis</h3>
+                                <p className="text-zinc-400 leading-relaxed">
+                                    Sanayi Mahallesi, Vinç Yolu Sokak No:12<br />
                                     Pendik, İstanbul, Türkiye
                                 </p>
                             </motion.div>
@@ -140,11 +145,11 @@ const Contact = () => {
                             transition={{ delay: 0.3 }}
                             className="lg:col-span-2"
                         >
-                            <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-md border border-zinc-200/60 p-8">
+                            <form onSubmit={handleSubmit} className="bg-zinc-900 rounded-2xl border border-zinc-800 p-8">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                     {/* Name */}
                                     <div>
-                                        <label htmlFor="name" className="block text-zinc-800 font-bold mb-2">
+                                        <label htmlFor="name" className="block text-zinc-300 font-bold mb-2 text-sm uppercase tracking-wide">
                                             Adınız Soyadınız / Firma Adı *
                                         </label>
                                         <input
@@ -153,19 +158,19 @@ const Contact = () => {
                                             name="name"
                                             value={formData.name}
                                             onChange={handleChange}
-                                            className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-zinc-900 focus:outline-none focus:border-amber-500 transition-colors ${
-                                                errors.name ? 'border-red-500' : 'border-zinc-300'
+                                            className={`w-full px-4 py-3 rounded-xl border bg-zinc-950 text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-500 transition-colors ${
+                                                errors.name ? 'border-red-500' : 'border-zinc-800'
                                             }`}
                                             placeholder="Adınız veya firmanızın unvanı"
                                         />
                                         {errors.name && (
-                                            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                                            <p className="text-red-400 text-xs mt-1">{errors.name}</p>
                                         )}
                                     </div>
 
                                     {/* Email */}
                                     <div>
-                                        <label htmlFor="email" className="block text-zinc-800 font-bold mb-2">
+                                        <label htmlFor="email" className="block text-zinc-300 font-bold mb-2 text-sm uppercase tracking-wide">
                                             E-posta Adresi *
                                         </label>
                                         <input
@@ -174,21 +179,21 @@ const Contact = () => {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleChange}
-                                            className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-zinc-900 focus:outline-none focus:border-amber-500 transition-colors ${
-                                                errors.email ? 'border-red-500' : 'border-zinc-300'
+                                            className={`w-full px-4 py-3 rounded-xl border bg-zinc-950 text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-500 transition-colors ${
+                                                errors.email ? 'border-red-500' : 'border-zinc-800'
                                             }`}
                                             placeholder="ornek@firma.com"
                                         />
                                         {errors.email && (
-                                            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                                            <p className="text-red-400 text-xs mt-1">{errors.email}</p>
                                         )}
                                     </div>
                                 </div>
 
                                 {/* Subject */}
                                 <div className="mb-6">
-                                    <label htmlFor="subject" className="block text-zinc-800 font-bold mb-2">
-                                        Proje Türü / Konu *
+                                    <label htmlFor="subject" className="block text-zinc-300 font-bold mb-2 text-sm uppercase tracking-wide">
+                                        Hizmet Türü / Konu *
                                     </label>
                                     <input
                                         type="text"
@@ -196,20 +201,20 @@ const Contact = () => {
                                         name="subject"
                                         value={formData.subject}
                                         onChange={handleChange}
-                                        className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-zinc-900 focus:outline-none focus:border-amber-500 transition-colors ${
-                                            errors.subject ? 'border-red-500' : 'border-zinc-300'
+                                        className={`w-full px-4 py-3 rounded-xl border bg-zinc-950 text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-500 transition-colors ${
+                                            errors.subject ? 'border-red-500' : 'border-zinc-800'
                                         }`}
-                                        placeholder="Örn: Temel Kazısı, Bina Yıkımı, Moloz Atımı"
+                                        placeholder="Örn: Dış Cephe Montajı, Tabela Takılması, Budama vb."
                                     />
                                     {errors.subject && (
-                                        <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
+                                        <p className="text-red-400 text-xs mt-1">{errors.subject}</p>
                                     )}
                                 </div>
 
                                 {/* Message */}
                                 <div className="mb-6">
-                                    <label htmlFor="message" className="block text-zinc-800 font-bold mb-2">
-                                        Proje Detayları ve Mesajınız *
+                                    <label htmlFor="message" className="block text-zinc-300 font-bold mb-2 text-sm uppercase tracking-wide">
+                                        İş Detayları ve Mesajınız *
                                     </label>
                                     <textarea
                                         id="message"
@@ -217,13 +222,13 @@ const Contact = () => {
                                         value={formData.message}
                                         onChange={handleChange}
                                         rows="6"
-                                        className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-zinc-900 focus:outline-none focus:border-amber-500 transition-colors resize-none ${
-                                            errors.message ? 'border-red-500' : 'border-zinc-300'
+                                        className={`w-full px-4 py-3 rounded-xl border bg-zinc-950 text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-500 transition-colors resize-none ${
+                                            errors.message ? 'border-red-500' : 'border-zinc-800'
                                         }`}
-                                        placeholder="Lütfen işin yapılacağı yer, tahmini metraj veya proje detaylarını belirtin..."
+                                        placeholder="Çalışmanın yapılacağı yükseklik (metre), lokasyon ve tarih detaylarını belirtebilirsiniz..."
                                     />
                                     {errors.message && (
-                                        <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                                        <p className="text-red-400 text-xs mt-1">{errors.message}</p>
                                     )}
                                 </div>
 
@@ -234,7 +239,7 @@ const Contact = () => {
                                 >
                                     <Button
                                         type="submit"
-                                        className="w-full bg-amber-500 hover:bg-amber-600 text-white py-6 rounded-xl text-lg font-black uppercase tracking-tight shadow-lg transition-all"
+                                        className="w-full bg-emerald-500 hover:bg-emerald-600 text-black py-6 rounded-xl text-lg font-black uppercase tracking-wider transition-all"
                                     >
                                         <Send className="h-5 w-5 mr-2" />
                                         Teklif Talebi Gönder

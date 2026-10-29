@@ -2,10 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const images = [
-    { url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop", title: "Ağır Hafriyat" },
-
-    { url: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1200&auto=format&fit=crop", title: "Altyapı Çalışmaları" },
-    { url: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?q=80&w=1200&auto=format&fit=crop", title: "Moloz Bertaraf" },
+    { url: "/6.jpeg", title: "Yüksek Erişim Platformu" },
+    { url: "/5.jpeg", title: "Dış Cephe Montajı" },
+    { url: "/4.jpeg", title: "7/24 Acil Vinç Hizmeti" },
 ];
 
 // Akışın kesintisiz olması için listeyi çoğaltıyoruz
@@ -18,10 +17,10 @@ const HeroSlideshow = () => {
             {/* Üst Başlık Alanı */}
             <div className="container mx-auto px-6 mb-12 z-10">
             <h2 className="text-white text-3xl md:text-6xl font-black uppercase tracking-tighter leading-none italic text-center mx-auto">
-                GÜÇLÜ <span className="text-amber-500">FİLO</span>
+                GÜÇLÜ <span className="text-emerald-500">FİLO</span>
             </h2>
-             <p className="text-gray-500 text-[10px] md:text-xs mt-4 max-w-2xl uppercase tracking-[0.2em] text-center mx-auto">
-                 Geniş Makine Parkuru ve Profesyonel Operasyon
+             <p className="text-zinc-500 text-[10px] md:text-xs mt-4 max-w-2xl uppercase tracking-[0.2em] text-center mx-auto">
+                 Modern Sepetli Vinç Parkuru ve Sertifikalı Operatörler
              </p>
             </div>
 
@@ -59,7 +58,7 @@ const HeroSlideshow = () => {
                                 <h3 className="text-white text-xl md:text-3xl font-black uppercase tracking-tighter italic">
                                     {item.title}
                                 </h3>
-                                <div className="w-12 h-1 bg-amber-500 mt-2 transition-all duration-500 group-hover/card:w-24" />
+                                <div className="w-12 h-1 bg-emerald-500 mt-2 transition-all duration-500 group-hover/card:w-24" />
                             </div>
                         </div>
                     ))}
@@ -67,7 +66,7 @@ const HeroSlideshow = () => {
             </div>
 
             {/* Arka Plan Glow Efekti */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500/5 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-emerald-500/5 via-transparent to-transparent pointer-events-none" />
         </section>
     );
 };
